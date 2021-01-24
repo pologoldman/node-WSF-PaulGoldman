@@ -1,0 +1,13 @@
+{
+    "posts": {
+      "1": {
+        "title": "Hello world",
+        "description": "Hello world"
+      },
+      "2": {
+        "title": "My first post",
+        "description": "My first description"
+      }
+    }
+  }
+  

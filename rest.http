@@ -1,0 +1,72 @@
+GET http://localhost:3000/vehicules
+
+###
+GET http://localhost:3000/owners
+###
+
+GET http://localhost:3000/concessionaires
+
+###
+GET http://localhost:3000/vehicules/2
+
+###
+GET http://localhost:3000/owners/1
+
+###
+DELETE http://localhost:3000/concessionaires/2
+
+###
+POST http://localhost:3000/vehicules
+Content-Type: application/json
+
+{
+    "marque":"porshe",
+    "model":"911",
+    "dateFabrication":"1859-01-01"
+}
+
+
+###
+POST http://localhost:3000/owners
+Content-Type: application/json
+
+{
+     "firstName": "Paul",
+     "lastName" :"Goldman",
+     "birthDate":"2000-10-10",
+     "LicenseType":"bateau"
+}
+
+###
+POST http://localhost:3000/concessionaires
+Content-Type: application/json
+
+{
+    "address": "3 route de lamorlaye",
+    "proprietaire":"Mattias"
+}
+
+
+
+###
+PUT http://localhost:3000/vehicules/1
+Content-Type: application/json
+
+{
+    "marque":"peugot",
+    "model": "3008"
+}
+###
+PUT http://localhost:3000/owners/1
+Content-Type: application/json
+
+{
+    "LicenseType": "voiture"
+}
+###
+PUT http://localhost:3000/concessionaires/1
+Content-Type: application/json
+
+{
+    "proprietaire": "Mattias"
+}
